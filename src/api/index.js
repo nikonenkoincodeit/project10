@@ -8,3 +8,4 @@ export const getData = (path) => {
     throw new Error(response.statusText);
   });
 };
+
