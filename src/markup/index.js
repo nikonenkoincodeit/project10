@@ -2,7 +2,7 @@ export function creatUserList(users = []) {
   return users
     .map((user) => {
       return `
-    <tr data-user= ${user.id}>
+    <tr class="tr-row" data-user= ${user.id}>
               <th scope="col">${user.id}</th>
               <th scope="col">${user.name}</th>
               <th scope="col">${user.username}</th>

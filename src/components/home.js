@@ -11,3 +11,16 @@ getData("users")
   .catch((error) => {
     console.log(error);
   });
+
+tableBodyRefs.addEventListener("click", onClick);
+
+function onClick(e) {
+  const elt = e.target.closest(".tr-row");
+  console.log(elt);
+  if (!elt) {
+    return;
+  }
+  const dataUserId = elt.dataset.user;
+  console.log(dataUserId);
+  location.href = "user.html?userid=" + dataUserId;
+}
